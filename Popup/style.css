@@ -1,0 +1,56 @@
+body{
+    background: #444444;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: Arial;
+    color: mediumaquamarine;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2em;
+}
+
+.button{
+    border: 3px solid mediumaquamarine;
+    padding: 10px;
+    color: mediumaquamarine;
+    text-decoration: none;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+#danbo-popup .popup-content{
+    width: 467px;
+    height: 310px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid mediumaquamarine;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #111111;
+    border-radius: 50%;
+    border: 3px solid mediumaquamarine;
+    color: mediumaquamarine;
+    text-decoration: none;
+    line-height: 0;
+    padding: 9px 0 11px;
+    width: 20px;
+    text-align: center;
+}
+
+.popup:target{
+    display: block;
+}
